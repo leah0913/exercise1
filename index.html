@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tim Horton's Orders</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <section class="container">
+        <section id="banner" class="banner">
+            <img src="img/mainLogo.png" alt="This is the picture of tim horton's coffee">
+        </section>
+        <header>
+            <h1>Welcome to Tim Horton's!</h1>
+        </header>
+        <section id="formContainer" class="formContainer">
+            <form id="order" action="php/order.php" method="post">
+                <h2>Give us some numbers...</h2>
+                <div class="fields_wrapper numOfCoffee_wrpper">
+                    <label for="numOfCoffee">Number Of Coffees</label>
+                    <input placeholder="0" type="number" name="numOfCoffee" id="numOfCoffee" min="1" max="100" required>
+                </div>
+                <div class="fields_wrapper size_wrapper">
+                    <label for="size">Size</label>
+                    <select name="size" id="size">
+                        <option value="Small" selected>Small</option>
+                        <option value="Medium" selected>Medium</option>
+                        <option value="Large">Large</option>
+                        <option value="X-Large">X-Large</option>
+                    </select>
+                </div>
+                <div class="fields_wrapper cream_wrpper">
+                    <label for="numOfCream">How many creams?</label>
+                    <input placeholder="0" type="number" name="numOfCream" id="numOfCream" min="0" max="500" required>
+                </div>
+                <div class="fields_wrapper sugar_wrpper">
+                    <label for="numOfSugar">How many sugars?</label>
+                    <input placeholder="0" type="number" name="numOfSugar" id="numOfSugar" min="0" max="500" required>
+                </div>
+                <section id="submitreset">
+                        <div class="fields_wrapper submitreset_wrapper">
+                            <input type="submit" name="submit" id="submit" value="Submit" />
+                            <input type="reset" name="reset" id="reset" value="Reset"/>
+                        </div>
+                </section>
+            </form>
+        </section>
+    </section>
+    </body>
+
+</html>
